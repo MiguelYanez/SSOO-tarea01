@@ -13,9 +13,9 @@ CXXFLAGS=-std=c++17 -Wall -O2
 
 DIR_OBJ=objs
 
-SRCS=$(wildcard *.cc)
+SRCS=$(wildcard *.c)
 
-OBJS=$(patsubst %.cc,$(DIR_OBJ)/%.o,$(SRCS))
+OBJS=$(patsubst %.c,$(DIR_OBJ)/%.o,$(SRCS))
 
 
 all: $(TARGET)
